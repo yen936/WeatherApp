@@ -9,7 +9,7 @@ One to two paragraph statement about your product and what it does.
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/yen936/WeatherApp/blob/master/weather.gif)
 
 
 
