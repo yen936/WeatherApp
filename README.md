@@ -11,7 +11,7 @@ WeatherApp uses LocationManager to grab current locaiton data, and networks with
 * Rio ✅
 * Jersy ✅
 
-# Skills/Tech used:
+### Skills/Tech used:
 * --Alamofire
 * --LocationManager
 * --SwiftyJSON
@@ -19,7 +19,7 @@ WeatherApp uses LocationManager to grab current locaiton data, and networks with
 * --Segues
 
 
-## Usage example
+### Usage example
 
 ![alt text](https://github.com/yen936/WeatherApp/blob/master/weather.gif)
 
