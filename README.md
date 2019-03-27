@@ -1,15 +1,28 @@
 # WeatherApp
-> Short blurb about what your product does.
+> Fetches weather by current location or chosen location
 
-One to two paragraph statement about your product and what it does.
+WeatherApp uses LocationManager to grab current locaiton data, and networks with Open Weather Api to collect data. Also user can query weather based on city name. Be sure to spell it right; otherwise the Api will not recogize it. 
 
-![](header.png)
+**Note: Some abbreviation cannot be used for cities, while others can. It is better to write out the whole city name.**
 
-## Usage example
+* LA 🚫
+* San Fran 🚫
+* NYC 🚫
+* Rio ✅
+* Jersy ✅
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+### Skills/Tech used:
+* --Alamofire
+* --LocationManager
+* --SwiftyJSON
+* --Delegates/Protocols
+* --Segues
+
+
+### Usage example
 
 ![alt text](https://github.com/yen936/WeatherApp/blob/master/weather.gif)
+
 
 
 
