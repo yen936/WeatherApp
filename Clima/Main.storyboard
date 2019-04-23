@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="78" width="375" height="589"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="221°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AT7-It-Fyf" userLabel="Temperature Label">
-                                        <rect key="frame" x="77" y="314" width="221" height="127"/>
+                                        <rect key="frame" x="77" y="346" width="221" height="127"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="127" id="Ofh-O2-Qly"/>
                                             <constraint firstAttribute="width" constant="221" id="nfd-Xb-DSN"/>
@@ -35,7 +35,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="C11-fU-d6q" userLabel="Weather Condition Image View">
-                                        <rect key="frame" x="109.5" y="202" width="156" height="104"/>
+                                        <rect key="frame" x="109.5" y="234" width="156" height="104"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="104" id="Erh-kb-68C"/>
                                             <constraint firstAttribute="width" constant="156" id="LNh-gT-Jhv"/>
@@ -47,7 +47,7 @@
                                             <constraint firstAttribute="height" constant="94" id="Y6d-A7-gcn"/>
                                             <constraint firstAttribute="width" constant="269" id="lKF-MY-OuS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -61,43 +61,42 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th1-Kr-XgW" userLabel="Change City Button">
+                                        <rect key="frame" x="118" y="504" width="139" height="34"/>
+                                        <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="139" id="JSD-5D-cWT"/>
+                                            <constraint firstAttribute="height" constant="34" id="duL-FP-Jp3"/>
+                                        </constraints>
+                                        <state key="normal" title="Change City">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="P1Y-dL-zMM" kind="presentation" identifier="changeCityName" id="miH-QC-hxD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="iXX-kV-qM2" firstAttribute="centerX" secondItem="VNR-V6-HMc" secondAttribute="centerX" id="01a-BL-4Ro"/>
-                                    <constraint firstAttribute="bottom" secondItem="AT7-It-Fyf" secondAttribute="bottom" constant="148" id="284-wt-lT7"/>
                                     <constraint firstItem="AT7-It-Fyf" firstAttribute="top" secondItem="C11-fU-d6q" secondAttribute="bottom" constant="8" id="7mM-U5-eJ0"/>
                                     <constraint firstItem="Ssc-Cu-XmK" firstAttribute="centerX" secondItem="VNR-V6-HMc" secondAttribute="centerX" id="Gav-82-L1V"/>
                                     <constraint firstItem="AT7-It-Fyf" firstAttribute="centerX" secondItem="VNR-V6-HMc" secondAttribute="centerX" id="IKu-hq-yIT"/>
+                                    <constraint firstItem="th1-Kr-XgW" firstAttribute="top" secondItem="AT7-It-Fyf" secondAttribute="bottom" constant="31" id="RrX-Xv-lbo"/>
+                                    <constraint firstAttribute="bottom" secondItem="th1-Kr-XgW" secondAttribute="bottom" constant="51" id="bFE-xZ-tY6"/>
+                                    <constraint firstAttribute="top" secondItem="th1-Kr-XgW" secondAttribute="bottom" constant="-538" id="pl5-Jf-8cz"/>
                                     <constraint firstItem="Ssc-Cu-XmK" firstAttribute="top" secondItem="iXX-kV-qM2" secondAttribute="bottom" constant="11" id="plI-aa-IUh"/>
+                                    <constraint firstItem="th1-Kr-XgW" firstAttribute="centerX" secondItem="VNR-V6-HMc" secondAttribute="centerX" id="smI-dc-pVW"/>
                                     <constraint firstItem="iXX-kV-qM2" firstAttribute="top" secondItem="VNR-V6-HMc" secondAttribute="top" constant="56" id="tPW-Kg-9Qe"/>
                                     <constraint firstItem="C11-fU-d6q" firstAttribute="centerX" secondItem="VNR-V6-HMc" secondAttribute="centerX" id="zpw-BQ-vqz"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th1-Kr-XgW" userLabel="Change City Button">
-                                <rect key="frame" x="118" y="36" width="139" height="34"/>
-                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="139" id="JSD-5D-cWT"/>
-                                    <constraint firstAttribute="height" constant="34" id="duL-FP-Jp3"/>
-                                </constraints>
-                                <state key="normal" title="Change City">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="P1Y-dL-zMM" kind="presentation" identifier="changeCityName" id="miH-QC-hxD"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VNR-V6-HMc" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="78" id="07h-6P-UiU"/>
-                            <constraint firstAttribute="trailing" secondItem="th1-Kr-XgW" secondAttribute="trailing" constant="118" id="6gt-0Q-tjH"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="VNR-V6-HMc" secondAttribute="bottom" id="A6U-Ul-urf"/>
                             <constraint firstAttribute="trailing" secondItem="VNR-V6-HMc" secondAttribute="trailing" id="SS8-Aa-l5K"/>
                             <constraint firstItem="VNR-V6-HMc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dgV-5V-Gpn"/>
-                            <constraint firstAttribute="top" secondItem="th1-Kr-XgW" secondAttribute="bottom" constant="-70" id="jBP-S7-EU8"/>
-                            <constraint firstItem="VNR-V6-HMc" firstAttribute="top" secondItem="th1-Kr-XgW" secondAttribute="bottom" constant="8" id="lDQ-pE-5DM"/>
-                            <constraint firstItem="th1-Kr-XgW" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="y6A-pb-wkw"/>
                         </constraints>
                     </view>
                     <connections>
