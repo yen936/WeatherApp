@@ -16,22 +16,28 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
     //Constants
     let WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather"
     let APP_ID = "82c2aa87060f204cebacf4f3bdfb96c8"
-    /***Get your own App ID at https://openweathermap.org/appid ****/
     
 
-    //TODO: Declare instance variables here
     let locationManager = CLLocationManager()
     let weatherDataModel = WeatherDataModel()
 
     
-    //Pre-linked IBOutlets
+    @IBOutlet var backroundView: UIView!
     @IBOutlet weak var weatherIcon: UIImageView!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
-
+    @IBOutlet weak var changeCityButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backroundView.backgroundColor = UIColor.init(displayP3Red: 55/255, green: 57/255, blue: 58/255, alpha: 1)
+        changeCityButton.layer.borderWidth = 1.0
+        changeCityButton.layer.cornerRadius = 1
+        changeCityButton.layer.borderColor = UIColor.white.cgColor
+        changeCityButton.layer.backgroundColor = nil
+        
         
         
         //TODO:Set up the location manager here.
@@ -57,6 +63,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
                 print("Sucess")
                 
                 let weatherJSON : JSON = JSON(response.result.value!)
+                print(weatherJSON)
                 self.updateWeatherData(json: weatherJSON)
                 
             }
@@ -113,6 +120,7 @@ class WeatherViewController: UIViewController, CLLocationManagerDelegate, Change
         cityLabel.text = weatherDataModel.city
         temperatureLabel.text = "\(weatherDataModel.temperature)°"
         weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
+        
         
         
     }
