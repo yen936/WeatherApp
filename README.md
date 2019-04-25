@@ -26,4 +26,5 @@ WeatherApp uses LocationManager to grab current location data, and networks with
 
 ### Change log
 
-* 1.0 Init
+* —-1.1 Updated UI to Dark theme
+* —-1.0 Init
