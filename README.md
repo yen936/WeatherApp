@@ -24,5 +24,4 @@ WeatherApp uses LocationManager to grab current location data, and networks with
 ![alt text](https://github.com/yen936/WeatherApp/blob/master/weather.gif)
 
 
-
-
+### Change log
